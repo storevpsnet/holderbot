@@ -10,10 +10,11 @@
  </a>
 </p>
 
-# What is holderbot ?
-HolderBot is a fast and simple bot designed to address the absence of the `Start Timer After First Connection` option in the `Marzban Panel` frontend. By leveraging the Marzban Panel APIs, HoldrBot enables you to effortlessly utilize this functionality in Telegram.
-# How to install ?
-To install HolderBot, simply enter the following commands on your ubuntu server.
+# هولدربات چیه؟
+هولدر بات یه ربات سریع و ساده‌ست که برای حل مشکل عدم وجود گزینه `شروع تایمر پس از اولین اتصال` در رابط کاربری "پنل مرزبان" ساخته شده. با استفاده از رابط‌های برنامه نویسی `پنل مرزبان`، هولدر بات بهت این امکان رو می‌ده که به راحتی از این قابلیت در تلگرام استفاده کنید.
+
+# چجوری نصب کنیم؟
+برای نصب فقط کافیه دستورات زیر را در سرور ابونتوی خود وارد کنید.
 ```
 cd && cd ..
 ```
@@ -22,51 +23,54 @@ cd && cd ..
 rm install.sh*
 ```
 
+
 ```
 sudo apt install && sudo apt-get install libjpeg-dev && wget https://raw.githubusercontent.com/erfjab/holderbot/main/install.sh && chmod +x install.sh && ./install.sh
 ```
+حالا که همه پیش‌نیازها نصب شدن، برای استارت زدن ربات اطلاعات زیر رو بهش بدید.
 
-Now that all the prerequisites are installed, you need to provide the following information to the bot for it to start.
-
-| Data | Description |
+| اطلاعات | توضیحات |
 | --- | --- |
-| Admin userID | Telegram userID of the person who wants to use the bot. You can obtain from the [@aloidbot](https://t.me/aloidbot) bot. |
-| Telegram bot token | You can obtain this from the [@BotFather](https://t.me/botfather)  bot. |
-| Panel username | You can enter the username of the main or secondary admin. |
-| Panel password | You can enter the password of the main or secondary admin. |
-| Panel domine | Enter the subdomain of your panel, without 'https://' and port , just like : sub.domain.com |
+| شناسه کاربری ادمین | شناسه کاربری تلگرامی شخصی که می‌خواهد از ربات استفاده کند. می‌توانید این اطلاعات را از این ربات بدست آورید. [@aloidbot](https://t.me/aloidbot) |
+| توکن ربات تلگرام | توکن بات تلگرامی خود را میتوانید از طریق [@BotFather](https://t.me/botfather) بدست آورید. |
+| نام کاربری پنل | می‌توانید نام کاربری مدیر اصلی یا ادمین را وارد کنید. |
+| رمز عبور پنل | می‌توانید رمز عبور مدیر اصلی یا ادمین را وارد کنید. |
+| دامنه پنل | ساب دامنه پنل خود را وارد کنید، بدون 'https://' و پورت، مانند: sub.domain.com |
 
-After completing the information, your page will look like this:
+اگر اطلاعاتتون رو به درستی وارد کرده باشید، یک پیامی به این شکل دریافت خواهید کرد.
 
 ![Example Image](nohupshot.png)
 
-**Keep the page as it is and now test the bot; If your information is correct, the bot will create a user for you, and if it is not correct, it will not create a user.**
-If the bot did not create a user for you, return to the page and run the following command. `CTRL + C`
+**صفحه را همانطور که هست نگه دارید و اکنون ربات را تست کنید. اگر اطلاعات شما صحیح باشد، ربات برای شما کاربر ایجاد می کند و اگر صحیح نباشد، کاربر ایجاد نمی کند.**
+اگر ربات برای شما کاربر ایجاد نکرد، به صفحه بازگردید و دستور زیر را اجرا کنید.
+```
+Ctrl C
+```
+سپس دوباره از ابتدا مراحل نصب را طی کنید، فقط در تکمیل اطلاعات خود دقت کنید.
 
+**اکنون، اگر این بار کاربر ربات ساخته است، پس لذت ببرید.** (سرور رو بدون دستوری ببندید.)
 
-Then go through the installation process again from the beginning, just be careful in completing your information.
+# بروزرسانی و امکانات جدید ؟
 
-**Now, if this time bot user made, then enjoy.** (Close the server without command.)
+برای `بورزسانی و افزودن امکانات جدید` به بات ، میتوانید `به گیت هاب هولدربات ستاره بدید.` همچنین برای حمایت های مالی میتوانید از این آأرس کیف پول ترون `TNU42jETaCLg96Dw3Sdcjbrfq1AdHVu4Rr` استفاده کنید. از همه ی شما متشکریم.
 
-# New Future
-To `update and add new features` to the bot, you can `give a star` to the HolderBot repository on GitHub. Additionally, for financial support, you can use this Tron wallet address: `TNU42jETaCLg96Dw3Sdcjbrfq1AdHVu4Rr`. We appreciate all your support.
+# چجوری استفاده کنیم؟ ( تکمیل نشده)
 
-# How to use ? (Not completed)
-All the necessary instructions will be received in Telegram after starting the bot. Enter the requested account information for the bot following this pattern: `Username volume Time` Then, it will ask for your confirmation. After receiving confirmation, it will send you a barcode and the text link for the created user. Also, a message containing the account details will be sent to you.
+همه دستورات لازم بعد از شروع ربات، در تلگرام دریافت می‌شود. بر اساس الگوی زیر، اطلاعات حساب خود را برای ربات وارد کنید: `نام‌کاربری حجم زمان` سپس، از شما تأیید خواهد شد. پس از دریافت تأیید، یک بارکد و لینک متنی برای حساب کاربری ایجاد شده برای شما ارسال می‌شود. همچنین، یک پیام حاوی جزئیات حساب به شما ارسال می‌شود.
 
-| Data | Description |
+| اطلاعات | توضیحات |
 | --- | --- |
-| username | text or number , no matter. (Marzban rules : A-Z 0-9 3-32 character) |
-| volume | How much GB ? (Unlimited or Number(int))|
-| time | How many days? (Number(int))|
+| نام‌کاربری | متن یا عدد، مهم نیست. (قوانین مرزبان: A-Z 0-9 3-32 کاراکتر) |
+| حجم | چند گیگابایت؟ (نامحدود یا عدد (صحیح))|
+| زمان | چند روز؟ (عدد (صحیح))|
 
-> example: Alex 20 30
+> مثال: erfjab 20 30
 
-> example: anna 50 30
+> مثال: marzban 50 30
 
-> example: jordi unlimited 120
+> مثال: me unlimited 120
 
-> example: erfjab unlimited 30 
+> مثال: you unlimited 30
 
 
 <p align="center">
@@ -81,5 +85,3 @@ All the necessary instructions will be received in Telegram after starting the b
 
 
 ![Example Image](screenshots.png)
-
-
